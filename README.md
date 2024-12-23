@@ -8,7 +8,7 @@ If you have any question, please feel free to email fanjq@tongji.edu.cn.
 
 ## :fire: News
 - This paper is submitted to IROS 2025.
-- Video demo
+- Video demo at: xxxxx
 - DRAMA-SRIS dataset at: data/drama/DRAMA-SRIS_dataset_compare/integrated_v7_3_r4_0211.json
 
 ## :pill: Installation
