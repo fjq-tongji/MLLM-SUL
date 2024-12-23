@@ -11,11 +11,15 @@ If you have any question, please feel free to email fanjq@tongji.edu.cn.
 - Video demo at: xxxxx
 - DRAMA-SRIS dataset at: data/drama/DRAMA-SRIS_dataset_compare/integrated_v7_3_r4_0211.json
 
-## :pill: Installation
-1. pytorch
-2. torchvision
+## :pill: Requirements
+* Python
+* Pytorch
+* torchvision
+* cider (already been added as a submodule)
+* coco-caption (already been added as a submodule)
+* tensorboardX
 
-## :star: Train & Inference
+## :star: Train
 1. 
 
 
