@@ -21,7 +21,7 @@ If you have any question, please feel free to email fanjq@tongji.edu.cn.
 
 ## :star: Train
 ### Start training
-> CUDA_VISIBLE_DEVICES=0 sh train_drama_1.sh
+> $ CUDA_VISIBLE_DEVICES=0 sh train_drama_1.sh
 >  
 
 
