@@ -76,9 +76,9 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
 
     # input json
-    parser.add_argument('--input_json', default='data/cityscapes/2. city_new_traffic_sign/cityscapes_paragraph_trainval_traffic_sign.json',
+    parser.add_argument('--input_json', default='data/drama/integrated_v7.json',
                         help='input json file to process into hdf5')
-    parser.add_argument('--output_json', default='data/cityscapes/2. city_new_traffic_sign/cityscapes_paragraph_trainval_traffic_sign_captions4eval.json',
+    parser.add_argument('--output_json', default='data/drama/drama_captions4eval.json',
                         help='output json file')
 
     args = parser.parse_args()
