@@ -12,6 +12,7 @@ If you have any question, please feel free to email fanjq@tongji.edu.cn.
 - DRAMA-SRIS dataset at: data/drama/DRAMA-SRIS_dataset_compare/integrated_v7_3_r4_0211.json
 
 ## :pill: Requirements
+* Ubuntu
 * Python
 * Pytorch
 * torchvision
