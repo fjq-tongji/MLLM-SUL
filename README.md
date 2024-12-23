@@ -24,7 +24,7 @@ If you have any question, please feel free to email fanjq@tongji.edu.cn.
 1. You should first set the path of input_json, output_json, and output_h5.  
 ```bash
 $ python prepro_drama_llama_adapter.py  
-```bash
+```markdown
 
 2. Then downloading the weights of LLaMA-2-7B using a single GPU.
 3. Using Faster-RCNN, ResNet-101, and Swin-L Transformer model to extract features for each image.  
