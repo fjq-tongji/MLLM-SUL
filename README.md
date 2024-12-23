@@ -20,8 +20,17 @@ If you have any question, please feel free to email fanjq@tongji.edu.cn.
 * tensorboardX
 
 ## :star: Train
+### Prepare training data
+You should first set the path of input_json, output_json, and output_h5.
+> python prepro_drama_llama_adapter.py
+
 ### Start training
 > CUDA_VISIBLE_DEVICES=0 sh train_drama_1.sh
->  
+>
+
+## :star: Inference
+### Prepare evaluation file
+You should first set the path of input_json.
+> python prepro_reference_json.py
 
 
