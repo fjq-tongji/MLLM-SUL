@@ -20,9 +20,13 @@ If you have any question, please feel free to email fanjq@tongji.edu.cn.
 * tensorboardX
 
 ## :star: Train
-### Prepare training data
-You should first set the path of input_json, output_json, and output_h5.
-> python prepro_drama_llama_adapter.py
+### Prepare training data and initial weights
+1. You should first set the path of input_json, output_json, and output_h5.  
+> python prepro_drama_llama_adapter.py   
+2. Then downloading the weights of LLaMA-2-7B using a single GPU.
+3. Using Faster-RCNN, ResNet-101, and Swin-L Transformer model to extract features for each image.  
+4. Setting the parameters 
+
 
 ### Start training
 > CUDA_VISIBLE_DEVICES=0 sh train_drama_1.sh
