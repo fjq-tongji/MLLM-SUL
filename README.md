@@ -28,7 +28,7 @@ If you have any question, please feel free to email fanjq@tongji.edu.cn.
 4. Setting the other parameters in train_drama_1.sh
 
 ### Start training
-`CUDA_VISIBLE_DEVICES=0 sh train_drama_1.sh`
+```CUDA_VISIBLE_DEVICES=0 sh train_drama_1.sh
 
 ## :star: Evaluation
 ### Prepare evaluation file
