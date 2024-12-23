@@ -22,7 +22,8 @@ If you have any question, please feel free to email fanjq@tongji.edu.cn.
 ## :star: Train
 ### Prepare training data and initial weights
 1. You should first set the path of input_json, output_json, and output_h5.  
-> python prepro_drama_llama_adapter.py   
+```bash
+$ python prepro_drama_llama_adapter.py   
 2. Then downloading the weights of LLaMA-2-7B using a single GPU.
 3. Using Faster-RCNN, ResNet-101, and Swin-L Transformer model to extract features for each image.  
 4. Setting the other parameters in train_drama_1.sh. And the "pretrained_reg" indicates the trained weights in the first stage.
