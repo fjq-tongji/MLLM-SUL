@@ -9,11 +9,6 @@ def parse_opt():
 
     parser.add_argument('--temperature', type=float, default=0.1, help='')
     parser.add_argument('--top_p', type=float, default=0.75, help='')
-
-
-
-
-
     parser.add_argument('--input_json', type=str, default='data/coco.json',
                     help='path to the json file containing additional info and vocab')
     parser.add_argument('--length_small_vocab', type=int, default=1684,
@@ -44,8 +39,6 @@ def parse_opt():
     parser.add_argument('--input_label_h5', type=str, default='data/coco_label.h5',
                     help='path to the h5file containing the preprocessed dataset')
     parser.add_argument('--h5_reg', type=bool, default=False)
-
-
     parser.add_argument('--start_from', type=str, default=None, #'log/log_transformer_1221_drama',
                     help="""continue training from saved model at this path. Path must contain files saved by previous training process: 
                         'infos.pkl'         : configuration;
@@ -76,8 +69,6 @@ def parse_opt():
                     help='2048 for resnet, 512 for vgg')
     parser.add_argument('--logit_layers', type=int, default=1,
                     help='number of layers in the RNN')
-
-
     parser.add_argument('--use_bn', type=int, default=0,
                     help='If 1, then do batch_normalization first in att_embed, if 2 then do bn both in the beginning and the end of att_embed')
 
@@ -92,7 +83,6 @@ def parse_opt():
                     help='keep feed-forward layer in the refining module?')
     parser.add_argument('--dropout_aoa', type=float, default=0.3,
                     help='dropout_aoa in the refining module?')
-
     parser.add_argument('--ctx_drop', type=int, default=0,
                     help='apply dropout to the context vector before fed into LSTM?')
     parser.add_argument('--decoder_type', type=str, default='AoA',
@@ -103,7 +93,6 @@ def parse_opt():
                     help='number of attention heads?')
     parser.add_argument('--multi_head_scale', type=int, default=1,
                     help='scale q,k,v?')
-
     parser.add_argument('--use_warmup', type=int, default=0,
                     help='warm up the learing rate?')
     parser.add_argument('--acc_steps', type=int, default=1,
@@ -178,7 +167,6 @@ def parse_opt():
                     help='')
     parser.add_argument('--reduce_on_plateau', action='store_true',
                     help='')
-
     parser.add_argument('--scheduled_sampling_start', type=int, default=-1, 
                     help='at what iteration to start decay gt probability')
     parser.add_argument('--scheduled_sampling_increase_every', type=int, default=5, 
@@ -245,10 +233,6 @@ def add_eval_options(parser):
     # Basic options
     parser.add_argument('--drama_img_path', type=str, default='/data/fjq/DRAMA/imgs/', help='')
     parser.add_argument('--save_bbox_img_path', type=str, default='/data/fjq/drama_log/log_transformer_1224_drama_cap_only/regs/', help='')
-
-
-
-
     parser.add_argument('--batch_size', type=int, default=100,
                     help='if > 0 then overrule, otherwise load from checkpoint.')
     parser.add_argument('--num_images', type=int, default=-1,
@@ -269,8 +253,6 @@ def add_eval_options(parser):
                     help='indicates number of beams in beam search. Usually 2 or 3 works well. More is not better. Set this to 1 for faster runtime but a bit worse performance.')
     parser.add_argument('--temperature', type=float, default=0.1, help='')
     parser.add_argument('--top_p', type=float, default=0.75, help='')
-
-
     parser.add_argument('--max_length', type=int, default=20,   #### 20  80  
                     help='Maximum length during sampling')
     parser.add_argument('--length_penalty', type=str, default='',
@@ -279,7 +261,6 @@ def add_eval_options(parser):
                     help='used for diverse beam search. if group_size is 1, then it\'s normal beam search')
     parser.add_argument('--diversity_lambda', type=float, default=0.5,
                     help='used for diverse beam search. Usually from 0.2 to 0.8. Higher value of lambda produces a more diverse list')
-    
     parser.add_argument('--decoding_constraint', type=int, default=0,
                     help='If 1, not allowing same word in a row')
     parser.add_argument('--block_trigrams', type=int, default=0,
@@ -315,7 +296,6 @@ def add_eval_options(parser):
                     help='if we need to print out all beam search beams.')
     parser.add_argument('--verbose_loss', type=int, default=0, 
                     help='If calculate loss using ground truth during evaluation')
-
 
     add_diversity_opts(parser)
 
