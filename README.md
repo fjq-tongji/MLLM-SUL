@@ -48,7 +48,7 @@ You should first set the path of infos_path, model, drama_img_path, save_bbox_im
 ```
 $ CUDA_VISIBLE_DEVICES=0 sh eval_karpathy_test_drama_1.sh
 ```
-The model performance is:
+The model performance for image description is:
 ```
 $ {"Bleu_1": 0.801369, "Bleu_2": 0.746511, "Bleu_3": 0.697345, "Bleu_4": 0.651604, "METEOR": 0.456727, "ROUGE_L": 0.7872960, "CIDEr": 2.985458}
 ```
