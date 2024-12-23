@@ -30,7 +30,7 @@ If you have any question, please feel free to email fanjq@tongji.edu.cn.
 ### Start training
 > CUDA_VISIBLE_DEVICES=0 sh train_drama_1.sh
 
-## :star: Evaluation
+## :trophy: Evaluation
 ### Prepare evaluation file
 > python prepro_reference_json.py
 ### Start evaluation
