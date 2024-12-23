@@ -35,7 +35,8 @@ If you have any question, please feel free to email fanjq@tongji.edu.cn.
 > python prepro_reference_json.py
 ### Start evaluating
 You should first set the path of infos_path, model, drama_img_path, save_bbox_img_path, save_path_seq, and save_path_index_iou. 
-> CUDA_VISIBLE_DEVICES=0 sh eval_karpathy_test_drama_1.sh  
+> CUDA_VISIBLE_DEVICES=0 sh eval_karpathy_test_drama_1.sh
+
 Then, you will get the scores for each evaluation metric.
 
 ## :sunflower: Acknowledgement
