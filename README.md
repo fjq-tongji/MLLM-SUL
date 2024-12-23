@@ -47,6 +47,7 @@ $ python prepro_reference_json.py
 You should first set the path of infos_path, model, drama_img_path, save_bbox_img_path, save_path_seq, and save_path_index_iou. 
 ```
 $ CUDA_VISIBLE_DEVICES=0 sh eval_karpathy_test_drama_1.sh
+$ {"Bleu_1": 0.801369, "Bleu_2": 0.746511, "Bleu_3": 0.697345, "Bleu_4": 0.651604, "METEOR": 0.456727, "ROUGE_L": 0.7872960, "CIDEr": 2.985458}
 ```
 
 Then, you will get the scores for each evaluation metric.
