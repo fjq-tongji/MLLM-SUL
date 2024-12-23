@@ -20,6 +20,8 @@ If you have any question, please feel free to email fanjq@tongji.edu.cn.
 * tensorboardX
 
 ## :star: Train
-1. 
+### Start training
+> CUDA_VISIBLE_DEVICES=0 sh train_drama_1.sh
+>  
 
 
