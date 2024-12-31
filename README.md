@@ -7,7 +7,6 @@
 If you have any question, please feel free to email fanjq@tongji.edu.cn.  
 
 ## :fire: News
-- This paper is submitted to IROS 2025.
 - Arxiv paper is at https://arxiv.org/abs/2412.19406
 - Video demo at: https://github.com/fjq-tongji/MLLM-SUL/releases/download/untagged-396e41d07e7f3495178f/default.mp4
 - DRAMA-SRIS dataset at: data/drama/DRAMA-SRIS_dataset_compare/integrated_v7_3_r4_0211.json
